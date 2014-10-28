@@ -4,8 +4,8 @@ module.exports = (grunt) ->
       options:
         dirs: ['assets/coffee/', 'assets/sass/**/']
         extentions: ['coffee', 'sass']
-      coffee: (filePath) -> return ['coffee']
-      sass: (filePath) -> ['compass']
+      coffee: -> ['coffee']
+      sass: -> ['compass']
 
     compass:
       dist:
@@ -26,4 +26,4 @@ module.exports = (grunt) ->
   for taskName of pkg.devDependencies
     grunt.loadNpmTasks taskName if taskName.substring(0, 6) is 'grunt-'
 
-    grunt.registerTask 'default', ['esteWatch']
+  grunt.registerTask 'default', ['esteWatch']
