@@ -1,17 +1,14 @@
 {
-  "name": "untitled",
+  "name": "myboilerplate",
   "version": "1.0.0",
-  "description": "",
-  "main": "Gruntfile.coffee",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
-    "grunt": "*",
-    "grunt-contrib-coffee": "*",
-    "grunt-contrib-compass": "*",
-    "grunt-este-watch": "*"
+    "coffee-script": "^1.8.0",
+    "gulp": "^3.8.10",
+    "gulp-coffee": "^2.2.0",
+    "gulp-compass": "^2.0.1"
   }
 }
